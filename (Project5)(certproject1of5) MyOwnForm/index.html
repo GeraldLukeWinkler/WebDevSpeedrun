@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="utf-8">
+    <meta display="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page-Title</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">Name
+            <input id="name" type="text" placeholder="Please enter your name" required>
+          </label>
+          <label id="email-label" for="email">What is your email?
+            <input id="email" type="email" placeholder="Please enter your email" required>
+          </label>
+          <label id="number-label" for="number">How old are you?
+            <input id="number" type="number" min="0" max="960"placeholder="Please enter your age" required>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">Which option best describes your current role?</label>
+          <select id="dropdown" required>
+            <option value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="full time job">Full time job</option>
+            <option value="full time learner">Full time learner</option>
+            <option value="other">Other</option>
+            <option value="none">Prefer not to say</option>
+          </select>
+        </fieldset>
+<!-- begining of buttons-->
+        <fieldset class="buttons">
+          <legend>Buttons</legend>
+          <label for='definately'><input type='radio' name='recomend' id='definately' value='definately'>Definately</label>
+          <label for='maybe'><input type='radio' name='recomend' id='maybe' value='maybe'>Maybe</label>
+          <label for='not-sure'><input type='radio' name='recomend' id='not-sure' value='not-sure'>Not sure</label>
+        </fieldset>
+        <fieldset class="buttons">
+          <legend>Demographic info</legend>
+          <label for='rural'><input id='rural' value="rural" type='checkbox' name="user-demografic-info">Rural Area</label>
+          <label for='disabled'><input id='disabled' value='disabled' type='checkbox' name="user-demografic-info">Disabled</label>
+          <label for='veteran'><input id='veteran' value='veteran' type='checkbox' name="user-demografic-info">Veteran</label>
+          <label for='minority'><input id='minority' value="minority" type='checkbox' name="user-demografic-info">Minority</label>
+        </fieldset>
+        <fieldset class="buttons">
+          <legend>Education</legend>
+          <label for='high-school'><input id='high-school' value='high-school' type='checkbox' name="education">High-School</label>
+          <label for='sub-college/trade'><input id='sub-college/trade' value="sub-college-trade" type='checkbox' name="education">Some College or Trade</label>
+          <label for='college'><input id='college' value="college" type='checkbox' name="education">College</label>
+          <label for='trade'><input id='trade' value='trade' type='checkbox' name="education">Trade</label>
+          <label for='masters'><input id='masters' value='masters' type='checkbox' name="education">Masters</label>
+          <label for='doctor'><input id='doctor' value='doctor' type='checkbox' name="education">Doctorate</label>
+
+          <!-- <legend>Bio</legend> -->
+          <label>Bio<textarea type="text-area" rows="3" cols='30' placeholder='how to get this to take up the entire width'></textarea></label>
+        </fieldset>
+        <label id='submit-text'for='submit'>Hope you enjoyed the form!<input id='submit' type='submit'></label>
+      </form>
+    </div>
+  </body>
+</html>
