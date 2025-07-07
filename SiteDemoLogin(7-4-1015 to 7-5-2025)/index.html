@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imaging Any Form Loader</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Welcome to Imaging Any Form Loader</h1>
+    <p>This is a simple HTML template.</p>
+    <div class="container">
+        <form id="what-user-type">
+<!--- Section for person type dropdown --->
+            <div class="controls">
+                <!--might want to nest select in a span for styleing?-->
+                <select id="user-dropdown" name="options">
+                    <option value="" selected>select a role</option>
+                    <option value="patient">Patient</option>
+                    <option value="healthcare-prodiver">Healthcare Provider</option>
+                    <option value="radiologist">Radiologist</option>
+                    <option value="administrator">Administrator</option>
+                    <option value="advocate">Consumer Advocate</option>
+                </select>
+                <button type="button" id="add-entry">Add Entry</button>
+            </div>
+            <div class="user-info">
+                <label for="username">this will remain the sane for all user types</label><input id="username" value="username">
+<!-- This is where all the cool changing stuff-->
+                
+                <fieldset id="changing-info">
+                    <legend>Temporary Legend</legend>
+                </fieldset>
+                <div id="test-container">
+                    <p>what is here now</p>
+                </div>
+                <button type="button" id="test-button">display input</button>
+            </div>
+        </form>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

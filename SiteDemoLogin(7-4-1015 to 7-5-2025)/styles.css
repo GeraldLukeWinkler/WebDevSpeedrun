@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+#test-container{
+    width:80%;
+    margin:0 auto;
+    background-color:orchid;
+}
+fieldset{
+    display:flex;
+    flex-direction: column;
+}
